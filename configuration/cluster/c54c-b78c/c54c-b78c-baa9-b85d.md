@@ -21,6 +21,14 @@
 | 발생 조건 | Alertmanager의 설정 변경시, 설정 다시읽기 작업 실패시 발생 |
 
 * #### ETCD3
+
+| 알람 ID | **ETC-001** |
+| :--- | :--- |
+| 중요도 |  |
+| 알람 이름 |  |
+| 지속 시간 |  |
+| 발생 조건 |  |
+
 * #### General
 * #### Kube-ApiServer
 * #### Kube-ControllerManager
