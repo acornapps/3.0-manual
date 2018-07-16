@@ -118,71 +118,71 @@
 | 알람 ID | **GEN-001** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | TargetDown |
+| 지속 시간 | 10분 |
+| 발생 조건 | 메트릭 수집 작업이 안 될 경우 발생. 어떤 작업이 실패인지 표시됨. |
 
 | 알람 ID | **GEN-002** |
 | :--- | :--- |
 | 중요도 | ~~none~~ |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | DeadMansSwitch |
+| 지속 시간 | 즉시 |
+| 발생 조건 | DeadMansSwitch 알림 |
 
 | 알람 ID | **GEN-003** |
 | :--- | :--- |
 | 중요도 | **critical** |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | TooManyOpenFileDescriptors |
+| 지속 시간 | 10분 |
+| 발생 조건 | file descriptor 사용율이 95%이상 일때 발생 |
 
 | 알람 ID | **GEN-004** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | FdExhaustionClose |
+| 지속 시간 | 10분 |
+| 발생 조건 | 단순회귀분석(simple linear regression)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
 
 | 알람 ID | **GEN-005** |
 | :--- | :--- |
 | 중요도 | **critical** |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | FdExhaustionClose |
+| 지속 시간 | 10분 |
+| 발생 조건 | 단순회귀분석(simple linear regression)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
 
 * #### Kube-ApiServer
 
 | 알람 ID | **KAS-001** |
 | :--- | :--- |
 | 중요도 | **critical** |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | K8SApiserverDown |
+| 지속 시간 | 5분 |
+| 발생 조건 | kube-apiserver 메트릭 수집이 안 될 경우 발생 |
 
 | 알람 ID | **KAS-002** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | K8SApiServerLatency |
+| 지속 시간 | 10분 |
+| 발생 조건 | 최근 10분 동안의 요청 대기 시간 중 99번째 백분위가 1s보다 클 경우 발생 |
 
 * #### Kube-ControllerManager
 
 | 알람 ID | **KCM-001** |
 | :--- | :--- |
 | 중요도 | **critical** |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | K8SControllerManagerDown |
+| 지속 시간 | 5분 |
+| 발생 조건 | kube-controller-manager 메트릭 수집이 안 될 경우 발생 |
 
 * #### Kube-Scheduler
 
 | 알람 ID | **KSC-001** |
 | :--- | :--- |
 | 중요도 | **critical** |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | K8SSchedulerDown |
+| 지속 시간 | 5분 |
+| 발생 조건 | kube-scheduler 메트릭 수집이 안 될 경우 발생 |
 
 * #### Kube-State-Metrics
 
