@@ -32,8 +32,6 @@
 
 * #### Kube-State-Metrics
 
-#### 
-
 * #### Kubelet
 
 * #### Node
