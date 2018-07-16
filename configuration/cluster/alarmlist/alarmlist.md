@@ -7,6 +7,7 @@
 * #### AlertManager
 
 | 알람 ID | ALM-001 |
+| :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | AlertmanagerDown |
 | 지속 시간 | 5분 |
