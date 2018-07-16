@@ -189,44 +189,44 @@
 | 알람 ID | **KSM-001** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | DeploymentGenerationMismatch |
+| 지속 시간 | 15분 |
+| 발생 조건 | Deployment에 설정한 generation과 수집된 generation이 다를 경우 발생 |
 
 | 알람 ID | **KSM-002** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | DeploymentReplicasNotUpdated |
+| 지속 시간 | 15분 |
+| 발생 조건 | Deployment에 설정한 replica 개수와 변경되거나 available 상태의 replica 개수가 다를 경우 발생 |
 
 | 알람 ID | **KSM-003** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | DaemonSetRolloutStuck |
+| 지속 시간 | 15분 |
+| 발생 조건 | DaemonSet에 상태가 Ready가 아닌 Pod가 있을 경우 발생 |
 
 | 알람 ID | **KSM-004** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | K8SDaemonSetsNotScheduled |
+| 지속 시간 | 10분 |
+| 발생 조건 | DaemonSet에 실행되어 할 Pod 개수 보다 실행중인 Pod 개수가 작을 경우 발생 |
 
 | 알람 ID | **KSM-005** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | DaemonSetsMissScheduled |
+| 지속 시간 | 10분 |
+| 발생 조건 | DaemonSet에 잘못 스케쥴된 Pod가 생겼을 경우 발생 |
 
 | 알람 ID | **KSM-006** |
 | :--- | :--- |
 | 중요도 | warning |
-| 알람 이름 |  |
-| 지속 시간 |  |
-| 발생 조건 |  |
+| 알람 이름 | PodFrequentlyRestarting |
+| 지속 시간 | 10분 |
+| 발생 조건 | 최근 1시간 동안 Pod 재시작 횟수가 5회 이상일 경우 발생 |
 
 * #### Kubelet
 
