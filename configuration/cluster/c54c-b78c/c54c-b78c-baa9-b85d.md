@@ -127,7 +127,7 @@
 | 중요도 | ~~none~~ |
 | 알람 이름 | DeadMansSwitch |
 | 지속 시간 | 즉시 |
-| 발생 조건 | DeadMansSwitch 알림. 해당 Alert는 사용자에게 통지되지 않습니다. |
+| 발생 조건 | DeadMansSwitch 알림. 해당 알람은 사용자에게 통지되지 않습니다. |
 
 | 알람 ID | **GEN-003** |
 | :--- | :--- |
@@ -141,14 +141,14 @@
 | 중요도 | warning |
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
-| 발생 조건 | 단순회귀분석(simple linear regression)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
+| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
 
 | 알람 ID | **GEN-005** |
 | :--- | :--- |
 | 중요도 | **critical** |
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
-| 발생 조건 | 단순회귀분석(simple linear regression)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
+| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
 
 * #### Kube-ApiServer
 
@@ -263,7 +263,7 @@
 | 중요도 | warning |
 | 알람 이름 | K8SKubeletTooManyPods |
 | 지속 시간 | 즉시 |
-| 발생 조건 | Node의 배치된 Pod의 수가 100개가 넘으면 발생.(제한값은 110) |
+| 발생 조건 | Node의 배치된 Pod의 수가 100개가 넘으면 발생.\(제한값은 110\) |
 
 * #### Node
 
