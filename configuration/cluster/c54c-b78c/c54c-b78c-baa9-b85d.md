@@ -127,7 +127,7 @@
 | 중요도 | ~~none~~ |
 | 알람 이름 | DeadMansSwitch |
 | 지속 시간 | 즉시 |
-| 발생 조건 | DeadMansSwitch 알림 |
+| 발생 조건 | DeadMansSwitch 알림. 해당 Alert는 사용자에게 통지되지 않습니다. |
 
 | 알람 ID | **GEN-003** |
 | :--- | :--- |
