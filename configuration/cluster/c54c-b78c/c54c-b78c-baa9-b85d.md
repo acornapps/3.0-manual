@@ -6,14 +6,14 @@
 
 * #### AlertManager
 
-| 알람 ID | ALM-001 |
+| 알람 ID | **ALM-001** |
 | :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | AlertmanagerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | Alertmanager 메트릭 수집이 안 될 경우 발생 |
 
-| 알람 ID | ALM-002 |
+| 알람 ID | **ALM-002** |
 | :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | AlertmanagerFailedReload |
@@ -21,23 +21,14 @@
 | 발생 조건 | Alertmanager의 설정 변경시, 설정 다시읽기 작업 실패시 발생 |
 
 * #### ETCD3
-
 * #### General
-
 * #### Kube-ApiServer
-
 * #### Kube-ControllerManager
-
 * #### Kube-Scheduler
-
 * #### Kube-State-Metrics
-
 * #### Kubelet
-
 * #### Node
-
 * #### Prometheus
-
 * #### Cocktail
 
 
