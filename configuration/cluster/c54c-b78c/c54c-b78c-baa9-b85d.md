@@ -30,7 +30,7 @@
 | 알람 이름 | InsufficientMembers |
 | 지속 시간 | 3분 |
 | 발생 조건 | ETCD 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | ETCD 클러스터의 상태를 확인한다. Prometheus의 로그 및 해당 노드의 etcd 상태를 확인한다. |
+| 조치 사항 | ETCD 클러스터의 상태를 확인한다. Prometheus의 로그 및 해당 노드의<br /> etcd 상태를 확인한다. |
 
 | 알람 ID | **ETC-002** |
 | :--- | :--- |
