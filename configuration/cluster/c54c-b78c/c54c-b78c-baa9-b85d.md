@@ -216,7 +216,7 @@
 | 알람 이름 | DeploymentGenerationMismatch |
 | 지속 시간 | 15분 |
 | 발생 조건 | Deployment에 설정한 generation과 수집된 generation이 다를 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | Deployment의 로그 및 이벤트를 확인한다. 필요하면 Deployment를 재배포한다. |
 
 | 알람 ID | **KSM-002** |
 | :--- | :--- |
@@ -224,7 +224,7 @@
 | 알람 이름 | DeploymentReplicasNotUpdated |
 | 지속 시간 | 15분 |
 | 발생 조건 | Deployment에 설정한 replica 개수와 변경되거나 available 상태의 replica 개수가 다를 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | Deployment 수정 사항이 반영이 안 된 상태이므로 Deployment 및 Pod의 로그 및 이벤트를 확인한다. |
 
 | 알람 ID | **KSM-003** |
 | :--- | :--- |
@@ -232,7 +232,7 @@
 | 알람 이름 | DaemonSetRolloutStuck |
 | 지속 시간 | 15분 |
 | 발생 조건 | DaemonSet에 상태가 Ready가 아닌 Pod가 있을 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. |
 
 | 알람 ID | **KSM-004** |
 | :--- | :--- |
@@ -240,7 +240,7 @@
 | 알람 이름 | K8SDaemonSetsNotScheduled |
 | 지속 시간 | 10분 |
 | 발생 조건 | DaemonSet에 실행되어 할 Pod 개수 보다 실행중인 Pod 개수가 작을 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. 배포가 안 된 노드가 정상인지 확인한다. 마스터 노드가 격리된 경우, Daemonset에 toleration 설정이 되어 있는지 확인한다. |
 
 | 알람 ID | **KSM-005** |
 | :--- | :--- |
@@ -248,7 +248,7 @@
 | 알람 이름 | DaemonSetsMissScheduled |
 | 지속 시간 | 10분 |
 | 발생 조건 | DaemonSet에 잘못 스케쥴된 Pod가 생겼을 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. |
 
 | 알람 ID | **KSM-006** |
 | :--- | :--- |
@@ -256,7 +256,7 @@
 | 알람 이름 | PodFrequentlyRestarting |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 1시간 동안 Pod 재시작 횟수가 5회 이상일 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요하면 Pod를 재시작한다. |
 
 * #### Kubelet
 
