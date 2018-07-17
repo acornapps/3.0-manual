@@ -109,7 +109,7 @@
 | 중요도 | warning |
 | 알람 이름 | HighNumberOfFailedProposals |
 | 지속 시간 | 즉시 |
-| 발생 조건 | 최근 1시간 동안 5개 이상의 실패한 raft protocol 요청이있을 경우. \(RAFT Protocol은 ETCD 동기화 Protocol\) |
+| 발생 조건 | 최근 1시간 동안 5개 이상의 실패한 raft protocol 요청이 있을 경우. \(RAFT Protocol은 ETCD 동기화 Protocol\) |
 | 조치 사항 |  |
 
 | 알람 ID | **ETC-012** |
