@@ -223,8 +223,8 @@
 | 중요도 | warning |
 | 알람 이름 | DeploymentReplicasNotUpdated |
 | 지속 시간 | 15분 |
-| 발생 조건 | Deployment에 설정한 replica 개수와 변경되거나 available 상태의 replica 개수가 다를 경우 발생 |
-| 조치 사항 | Deployment 수정 사항이 반영이 안 된 상태이므로 Deployment 및 Pod의 로그 및 이벤트를 확인한다. |
+| 발생 조건 | Deployment에 설정한 replica 개수와 변경되거나 available 상태의<br /> replica 개수가 다를 경우 발생 |
+| 조치 사항 | Deployment 수정 사항이 반영이 안 된 상태이므로 Deployment 및<br /> Pod의 로그 및 이벤트를 확인한다. |
 
 | 알람 ID | **KSM-003** |
 | :--- | :--- |
@@ -239,8 +239,8 @@
 | 중요도 | warning |
 | 알람 이름 | K8SDaemonSetsNotScheduled |
 | 지속 시간 | 10분 |
-| 발생 조건 | DaemonSet에 실행되어 할 Pod 개수 보다 실행중인 Pod 개수가 작을 경우 발생 |
-| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. 배포가 안 된 노드가 정상인지 확인한다.<br /> 마스터 노드가 격리된 경우, Daemonset에 toleration 설정이 되어 있는지 확인한다. |
+| 발생 조건 | DaemonSet에 실행되어 할 Pod 개수 보다 실행중인<br /> Pod 개수가 작을 경우 발생 |
+| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다.<br /> 배포가 안 된 노드가 정상인지 확인한다.<br /> 마스터 노드가 격리된 경우, Daemonset에 toleration 설정이 되어 있는지 확인한다. |
 
 | 알람 ID | **KSM-005** |
 | :--- | :--- |
@@ -266,7 +266,7 @@
 | 알람 이름 | K8SNodeNotReady |
 | 지속 시간 | 1시간 |
 | 발생 조건 | Node 상태가 Ready가 아닐 경우 발생 |
-| 조치 사항 | 해당 노드의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | 해당 노드의 상태 및 이벤트를 확인한다.<br /> ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-002** |
 | :--- | :--- |
@@ -274,7 +274,7 @@
 | 알람 이름 | K8SManyNodesNotReady |
 | 지속 시간 | 1분 |
 | 발생 조건 | 클러스터 전체에서 Node 상태가 Ready가 아닌 비율이 20%이상일 경우 발생 |
-| 조치 사항 | 해당 노드들의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | 해당 노드들의 상태 및 이벤트를 확인한다.<br /> ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-003** |
 | :--- | :--- |
