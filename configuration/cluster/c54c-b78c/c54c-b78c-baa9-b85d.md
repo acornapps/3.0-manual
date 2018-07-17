@@ -384,7 +384,7 @@
 | 알람 이름 | PodCPULimitUsage |
 | 지속 시간 | 30분 |
 | 발생 조건 | Resource Limit 설정값 대비 CPU 사용율이 90%가 넘으면 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 계속 발생할 경우, Deployment의 CPU Limit 값 변경 |
 
 | 알람 ID | **CKT-004** |
 | :--- | :--- |
@@ -392,4 +392,4 @@
 | 알람 이름 | PodMemoryLimitUsage |
 | 지속 시간 | 30분 |
 | 발생 조건 | Resource Limit 설정값 대비 Memory 사용율이 90%가 넘으면 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 계속 발생할 경우, Deployment의 Memory Limit 값 변경 |
