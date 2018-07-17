@@ -46,7 +46,7 @@
 | 알람이름 | HighNumberOfLeaderChanges |
 | 지속시간 | 즉시 |
 | 발생조건 | 최근 1시간 동안 3번 이상의 리더 변경이 발생할 경우 |
-| 조치사항 | ETCD 클러스터의 상태를 확인한다.  Disk Latency로 인한 문제 일 수 있으므로 다음 명령을 ETCD 클러스터 전체 노드에서 실행한다. \([https://coreos.com/etcd/docs/latest/tuning.html\#disk](https://coreos.com/etcd/docs/latest/tuning.html#disk)\) ``$ sudo ionice -c2 -n0 -p `pgrep etcd` `` |
+| 조치사항 | ETCD 클러스터의 상태를 확인한다.<br />  Disk Latency로 인한 문제 일 수 있으므로 다음 명령을 ETCD 클러스터 전체 노드에서 실행한다.<br /> \([https://coreos.com/etcd/docs/latest/tuning.html\#disk](https://coreos.com/etcd/docs/latest/tuning.html#disk)\)<br /> ``$ sudo ionice -c2 -n0 -p `pgrep etcd` `` |
 
 | 알람 ID | **ETC-004** |
 | :--- | :--- |
