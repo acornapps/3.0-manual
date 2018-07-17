@@ -178,7 +178,7 @@
 | 알람 이름 | K8SApiserverDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-apiserver 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | kube-apiserver의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **KAS-002** |
 | :--- | :--- |
@@ -196,7 +196,7 @@
 | 알람 이름 | K8SControllerManagerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-controller-manager 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | kube-controller-manager의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-Scheduler
 
@@ -206,7 +206,7 @@
 | 알람 이름 | K8SSchedulerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-scheduler 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | kube-scheduler의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-State-Metrics
 
