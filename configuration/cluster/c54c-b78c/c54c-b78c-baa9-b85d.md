@@ -159,15 +159,15 @@
 | 중요도 | warning |
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
-| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
-| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요할 경우, 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
+| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 4시간 이내에<br /> file descriptor 고갈이 예측될 경우 발생 |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다.<br /> 필요할 경우, 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 | 알람 ID | **GEN-005** |
 | :--- | :--- |
 | 중요도 | **critical** |
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
-| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
+| 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 1시간 이내에<br /> file descriptor 고갈이 예측될 경우 발생 |
 | 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다.<br /> 필요할 경우, 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 * #### Kube-ApiServer
@@ -178,7 +178,7 @@
 | 알람 이름 | K8SApiserverDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-apiserver 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 kube-apiserver의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-apiserver의 로그와 이벤트를 확인한다.<br /> 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **KAS-002** |
 | :--- | :--- |
