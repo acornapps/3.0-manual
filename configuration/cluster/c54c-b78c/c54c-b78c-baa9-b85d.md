@@ -308,7 +308,7 @@
 | 알람 이름 | NodeExporterDown |
 | 지속 시간 | 10분 |
 | 발생 조건 | NodeExporter 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | NodeExporter의 로그와 이벤트를 확안한다.  |
+| 조치 사항 | NodeExporter의 로그와 이벤트를 확인한다. |
 
 | 알람 ID | **NOD-002** |
 | :--- | :--- |
