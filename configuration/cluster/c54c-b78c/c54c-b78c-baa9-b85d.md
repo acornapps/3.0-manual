@@ -12,7 +12,7 @@
 | 알람 이름 | AlertmanagerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | Alertmanager 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 Alertmanager의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 Alertmanager의 로그와 이벤트를 확인한다.<br /> 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **ALM-002** |
 | :--- | :--- |
@@ -109,24 +109,24 @@
 | 중요도 | warning |
 | 알람 이름 | HighNumberOfFailedProposals |
 | 지속 시간 | 즉시 |
-| 발생 조건 | 최근 1시간 동안 5개 이상의 실패한 raft protocol 요청이 있을 경우. \(RAFT Protocol은 ETCD 동기화 Protocol\) |
-| 조치 사항 | ETCD 메트릭 문서\([https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md%29에) 따르면 리더 선출의 일시적인 실패 또는 멤버 부족으로 인한 ETCD 클러스터 중단 시간이 길어질 경우 발생합니다. 리더가 있는지, 중단된 ETCD 멤버가 있는지 확인 |
+| 발생 조건 | 최근 1시간 동안 5개 이상의 실패한 raft protocol 요청이 있을 경우.<br /> \(RAFT Protocol은 ETCD 동기화 Protocol\) |
+| 조치 사항 | [ETCD 메트릭 문서](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md \)에 따르면 리더 선출의 일시적인 실패 또는 멤버 부족으로 인한<br /> ETCD 클러스터 중단 시간이 길어질 경우 발생합니다.<br /> 리더가 있는지, 중단된 ETCD 멤버가 있는지 확인 |
 
 | 알람 ID | **ETC-012** |
 | :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | HighFsyncDurations |
 | 지속 시간 | 10분 |
-| 발생 조건 | 최근 5분 동안의 wal fsync 지속 시간의 99번째 백분위가 500ms보다 클 경우 \(wal fsync: 로그 항목을 적용하기 전에 디스크에 저장시 호출.\) |
-| 조치 사항 | ETCD 메트릭 문서\([https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md%29에) 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
+| 발생 조건 | 최근 5분 동안의 wal fsync 지속 시간의 99번째 백분위가 500ms보다 클 경우<br /> \(wal fsync: 로그 항목을 적용하기 전에 디스크에 저장시 호출.\) |
+| 조치 사항 | [ETCD 메트릭 문서](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md%29에) 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
 
 | 알람 ID | **ETC-013** |
 | :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | HighCommitDurations |
 | 지속 시간 | 10분 |
-| 발생 조건 | 최근 5분 동안의 커밋 지속 시간 중 99번째 백분위가 250ms보다 클 경우 \(backend commit: 디스크에 대한 최근 변경 사항의 증분 스냅 샷의 커밋.\) |
-| 조치 사항 | ETCD 메트릭 문서\([https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md%29에) 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
+| 발생 조건 | 최근 5분 동안의 커밋 지속 시간 중 99번째 백분위가 250ms보다 클 경우<br /> \(backend commit: 디스크에 대한 최근 변경 사항의 증분 스냅 샷의 커밋.\) |
+| 조치 사항 | [ETCD 메트릭 문서](https://github.com/coreos/etcd/blob/master/Documentation/metrics.md%29에) 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
 
 * #### General
 
@@ -160,7 +160,7 @@
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
 | 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
-| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요한면 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요할 경우, 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 | 알람 ID | **GEN-005** |
 | :--- | :--- |
@@ -168,7 +168,7 @@
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
 | 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
-| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요한면 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다.<br /> 필요할 경우, 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 * #### Kube-ApiServer
 
@@ -196,7 +196,7 @@
 | 알람 이름 | K8SControllerManagerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-controller-manager 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 kube-controller-manager의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-controller-manager의 로그와 이벤트를 확인한다.<br /> 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-Scheduler
 
@@ -206,7 +206,7 @@
 | 알람 이름 | K8SSchedulerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-scheduler 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 kube-scheduler의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-scheduler의 로그와 이벤트를 확인한다.<br /> 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-State-Metrics
 
@@ -216,7 +216,7 @@
 | 알람 이름 | DeploymentGenerationMismatch |
 | 지속 시간 | 15분 |
 | 발생 조건 | Deployment에 설정한 generation과 수집된 generation이 다를 경우 발생 |
-| 조치 사항 | Deployment의 로그 및 이벤트를 확인한다. 필요하면 Deployment를 재배포한다. |
+| 조치 사항 | Deployment의 로그 및 이벤트를 확인한다.<br /> 필요하면 Deployment를 재배포한다. |
 
 | 알람 ID | **KSM-002** |
 | :--- | :--- |
@@ -240,7 +240,7 @@
 | 알람 이름 | K8SDaemonSetsNotScheduled |
 | 지속 시간 | 10분 |
 | 발생 조건 | DaemonSet에 실행되어 할 Pod 개수 보다 실행중인 Pod 개수가 작을 경우 발생 |
-| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. 배포가 안 된 노드가 정상인지 확인한다. 마스터 노드가 격리된 경우, Daemonset에 toleration 설정이 되어 있는지 확인한다. |
+| 조치 사항 | 해당 Daemonset과 Pod의 로그 및 이벤트를 확인한다. 배포가 안 된 노드가 정상인지 확인한다.<br /> 마스터 노드가 격리된 경우, Daemonset에 toleration 설정이 되어 있는지 확인한다. |
 
 | 알람 ID | **KSM-005** |
 | :--- | :--- |
@@ -282,7 +282,7 @@
 | 알람 이름 | K8SKubeletDown |
 | 지속 시간 | 1시간 |
 | 발생 조건 | 클러스터 전체에서 3%이상의 kubelet 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 해당 노드의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | Prometheus의 로그 및 해당 노드의 상태 및 이벤트를 확인한다.<br /> ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-004** |
 | :--- | :--- |
@@ -290,7 +290,7 @@
 | 알람 이름 | K8SKubeletDown |
 | 지속 시간 | 1시간 |
 | 발생 조건 | 클러스터 전체에서 10%이상의 kubelet 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 해당 노드들의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | Prometheus의 로그 및 해당 노드들의 상태 및 이벤트를 확인한다.<br /> ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-005** |
 | :--- | :--- |
@@ -298,7 +298,7 @@
 | 알람 이름 | K8SKubeletTooManyPods |
 | 지속 시간 | 즉시 |
 | 발생 조건 | Node의 배치된 Pod의 수가 100개가 넘으면 발생.\(제한값은 110\) |
-| 조치 사항 | 제한값에 도달할 경우, 더 이상 Pod 생성이 안됨. 다른 노드들의 상태도 같이 확인하여 여유가 없을 경우, 노드를 증설한다. |
+| 조치 사항 | 제한값에 도달할 경우, 더 이상 Pod 생성이 안됨.<br /> 다른 노드들의 상태도 같이 확인하여 여유가 없을 경우, 노드를 증설한다. |
 
 * #### Node
 
@@ -308,7 +308,7 @@
 | 알람 이름 | NodeExporterDown |
 | 지속 시간 | 10분 |
 | 발생 조건 | NodeExporter 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 NodeExporter의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 NodeExporter의 로그와 이벤트를 확인한다.<br /> 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **NOD-002** |
 | :--- | :--- |
@@ -332,7 +332,7 @@
 | 알람 이름 | K8SNodeDiskPressure |
 | 지속 시간 | 즉시 |
 | 발생 조건 | Node 상태가 DiskPressure일 때 발생 |
-| 조치 사항 | 노드에서 로그, 미사용 dodkcer image, pv backup 등 디스크 공간을 확보한다. 계속 발생할 경우, 해당 노드의 디스크를 증설한다. |
+| 조치 사항 | 노드에서 로그, 미사용 dodkcer image, pv backup등을 삭제하여 디스크 공간을 확보한다.<br /> 계속 발생할 경우, 해당 노드의 디스크를 증설한다. |
 
 | 알람 ID | **NOD-005** |
 | :--- | :--- |
@@ -376,7 +376,7 @@
 | 알람 이름 | PvLowTotalDisk |
 | 지속 시간 | 30분 |
 | 발생 조건 | PV가 마운트된 디스크의 크기 대비 사용량이 80%가 넘으면 발생 |
-| 조치 사항 | 마운트된 디스크의 상태를 확인하고 필요하면 디스크를 증설한다. 미사용 PV를 제거한다. |
+| 조치 사항 | 마운트된 디스크의 상태를 확인하고 미사용 PV를 제거한다.<br /> 필요하면 디스크를 증설한다. |
 
 | 알람 ID | **CKT-003** |
 | :--- | :--- |
