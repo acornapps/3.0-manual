@@ -30,7 +30,7 @@
 | 알람 이름 | InsufficientMembers |
 | 지속 시간 | 3분 |
 | 발생 조건 | ETCD 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | Prometheus의 로그 및 해당 노드의 etcd 상태를 확인한다. |
+| 조치 사항 | ETCD 클러스터의 상태를 확인한다. Prometheus의 로그 및 해당 노드의 etcd 상태를 확인한다. |
 
 | 알람 ID | **ETC-002** |
 | :--- | :--- |
@@ -38,14 +38,14 @@
 | 알람 이름 | NoLeader |
 | 지속 시간 | 1분 |
 | 발생 조건 | ETCD 리더가 없을 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | ETCD 클러스터의 상태를 확인한다. |
 
 | 알람 ID | **ETC-003** |
 | :--- | :--- |
 | 중요도 | warning |
 | 알람 이름 | HighNumberOfLeaderChanges |
 | 지속 시간 | 즉시 |
-| 발생 조건 | 최근 1시간 동안 3번 이상의 리더 변경이  발생할 경우 |
+| 발생 조건 | 최근 1시간 동안 3번 이상의 리더 변경이 발생할 경우 |
 | 조치 사항 |  |
 
 | 알람 ID | **ETC-004** |
@@ -54,7 +54,7 @@
 | 알람 이름 | HighNumberOfFailedGRPCRequests |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5 분 이내에 gRPC 메소드 호출의 1% 이상 실패한 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-005** |
 | :--- | :--- |
@@ -62,7 +62,7 @@
 | 알람 이름 | HighNumberOfFailedGRPCRequests |
 | 지속 시간 | 5분 |
 | 발생 조건 | 최근 5 분 이내에 gRPC 메소드 호출의 5% 이상 실패한 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-006** |
 | :--- | :--- |
@@ -70,7 +70,7 @@
 | 알람 이름 | GRPCRequestsSlow |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안 gRPC 메서드 요청 대기 시간 중 99 번째 백분위가 150ms보다 클 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-007** |
 | :--- | :--- |
@@ -78,7 +78,7 @@
 | 알람 이름 | HighNumberOfFailedHTTPRequests |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5 분 이내에 HTTP 엔드 포인트에 대한 요청의 1% 이상이 실패한 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-008** |
 | :--- | :--- |
@@ -86,7 +86,7 @@
 | 알람 이름 | HighNumberOfFailedHTTPRequests |
 | 지속 시간 | 5분 |
 | 발생 조건 | 최근 5 분 이내에 HTTP 엔드 포인트에 대한 요청의 5% 이상이 실패한 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-009** |
 | :--- | :--- |
@@ -94,7 +94,7 @@
 | 알람 이름 | HTTPRequestsSlow |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 HTTP 요청 대기 시간 중 99번째 백분위가 150ms보다 클 경우 |
-| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 Bandwidth를 늘리거나 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-010** |
 | :--- | :--- |
@@ -102,7 +102,7 @@
 | 알람 이름 | EtcdMemberCommunicationSlow |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 멤버간 통신 대기 시간 중 99번째 백분위가 150ms보다 클 경우 |
-| 조치 사항 | ETCD 클러스터의 Bandwidth를 늘리거나 클러스터의 Scale-Up 필요. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 클러스터의 Bandwidth를 늘리거나 클러스터의 Scale-Up 필요. |
 
 | 알람 ID | **ETC-011** |
 | :--- | :--- |
@@ -118,7 +118,7 @@
 | 알람 이름 | HighFsyncDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 wal fsync 지속 시간의 99번째 백분위가 500ms보다 클 경우 \(wal fsync: 로그 항목을 적용하기 전에 디스크에 저장시 호출.\) |
-| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
 
 | 알람 ID | **ETC-013** |
 | :--- | :--- |
@@ -126,7 +126,7 @@
 | 알람 이름 | HighCommitDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 커밋 지속 시간 중 99번째 백분위가 250ms보다 클 경우 \(backend commit: 디스크에 대한 최근 변경 사항의 증분 스냅 샷의 커밋.\) |
-| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. |
 
 * #### General
 
@@ -186,7 +186,7 @@
 | 알람 이름 | K8SApiServerLatency |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 10분 동안의 요청 대기 시간 중 99번째 백분위가 1s보다 클 경우 발생 |
-| 조치 사항 | 계속 발생할 경우, 마스터 노드를 증설한다. ETCD 클러스터가 같이 설치되어 있는 경우라면 ETCD 클러스터를 분리한다. |
+| 조치 사항 | 계속 발생할 경우, 마스터 노드를 증설한다. |
 
 * #### Kube-ControllerManager
 
