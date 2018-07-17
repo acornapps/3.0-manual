@@ -178,7 +178,7 @@
 | 알람 이름 | K8SApiserverDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-apiserver 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | kube-apiserver의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-apiserver의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **KAS-002** |
 | :--- | :--- |
@@ -196,7 +196,7 @@
 | 알람 이름 | K8SControllerManagerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-controller-manager 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | kube-controller-manager의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-controller-manager의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-Scheduler
 
@@ -206,7 +206,7 @@
 | 알람 이름 | K8SSchedulerDown |
 | 지속 시간 | 5분 |
 | 발생 조건 | kube-scheduler 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | kube-scheduler의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 kube-scheduler의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 * #### Kube-State-Metrics
 
@@ -282,7 +282,7 @@
 | 알람 이름 | K8SKubeletDown |
 | 지속 시간 | 1시간 |
 | 발생 조건 | 클러스터 전체에서 3%이상의 kubelet 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | 해당 노드의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | Prometheus의 로그 및 해당 노드의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-004** |
 | :--- | :--- |
@@ -290,7 +290,7 @@
 | 알람 이름 | K8SKubeletDown |
 | 지속 시간 | 1시간 |
 | 발생 조건 | 클러스터 전체에서 10%이상의 kubelet 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | 해당 노드들의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
+| 조치 사항 | Prometheus의 로그 및 해당 노드들의 상태 및 이벤트를 확인한다. ssh를 통해 노드에 접속하여 kubelet의 상태를 확인한다. |
 
 | 알람 ID | **KBL-005** |
 | :--- | :--- |
@@ -308,7 +308,7 @@
 | 알람 이름 | NodeExporterDown |
 | 지속 시간 | 10분 |
 | 발생 조건 | NodeExporter 메트릭 수집이 안 될 경우 발생 |
-| 조치 사항 | NodeExporter의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
+| 조치 사항 | Prometheus의 로그 및 NodeExporter의 로그와 이벤트를 확인한다. 필요할 경우, Pod를 재시작한다. |
 
 | 알람 ID | **NOD-002** |
 | :--- | :--- |
