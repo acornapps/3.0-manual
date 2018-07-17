@@ -38,7 +38,7 @@
 | 알람 이름 | NoLeader |
 | 지속 시간 | 1분 |
 | 발생 조건 | ETCD 리더가 없을 경우 발생 |
-| 조치 사항 | ETCD 클러스터의 상태를 확인한다. Disk Latency로 인한 문제 일 수 있으므로 다음 명령을 ETCD 클러스터 전체 노드에서 싷행시킨다. <code>$ sudo ionice -c2 -n0 -p `pgrep etcd`</code>  |
+| 조치 사항 | ETCD 클러스터의 상태를 확인한다. Disk Latency로 인한 문제 일 수 있으므로 다음 명령을 ETCD 클러스터 전체 노드에서 싷행한다. $ sudo ionice -c2 -n0 -p `pgrep etcd`  |
 
 | 알람 ID | **ETC-003** |
 | :--- | :--- |
