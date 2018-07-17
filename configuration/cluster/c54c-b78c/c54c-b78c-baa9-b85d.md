@@ -20,7 +20,7 @@
 | 알람 이름 | AlertmanagerFailedReload |
 | 지속 시간 | 10분 |
 | 발생 조건 | Alertmanager의 설정 변경시, 설정 다시읽기 작업 실패시 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Pod의 로그를 확인하여 ConfigMap의 설정 파일의 오류를 수정한다. |
 
 * #### ETCD3
 
@@ -358,7 +358,7 @@
 | 알람 이름 | PrometheusFailedReload |
 | 지속 시간 | 10분 |
 | 발생 조건 | Prometheus의 설정 변경시, 설정 다시읽기 작업 실패시 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Pod의 로그를 확인하여 ConfigMap의 설정 파일의 오류를 수정한다. |
 
 * #### Cocktail
 
