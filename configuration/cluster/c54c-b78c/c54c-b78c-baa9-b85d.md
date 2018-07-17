@@ -118,7 +118,7 @@
 | 알람 이름 | HighFsyncDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 wal fsync 지속 시간의 99번째 백분위가 500ms보다 클 경우 \(wal fsync: 로그 항목을 적용하기 전에 디스크에 저장시 호출.\) |
-| 조치 사항 |  |
+| 조치 사항 | ETCD 메트힉 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크 문제시 발생한다고 함. |
 
 | 알람 ID | **ETC-013** |
 | :--- | :--- |
@@ -126,7 +126,7 @@
 | 알람 이름 | HighCommitDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 커밋 지속 시간 중 99번째 백분위가 250ms보다 클 경우 \(backend commit: 디스크에 대한 최근 변경 사항의 증분 스냅 샷의 커밋.\) |
-| 조치 사항 |  |
+| 조치 사항 | ETCD 메트힉 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크 문제시 발생한다고 함. |
 
 * #### General
 
