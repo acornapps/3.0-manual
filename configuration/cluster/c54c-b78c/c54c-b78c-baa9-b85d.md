@@ -152,7 +152,7 @@
 | 알람 이름 | TooManyOpenFileDescriptors |
 | 지속 시간 | 10분 |
 | 발생 조건 | file descriptor 사용율이 95%이상 일때 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 | 알람 ID | **GEN-004** |
 | :--- | :--- |
@@ -160,7 +160,7 @@
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
 | 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 4시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요한면 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 | 알람 ID | **GEN-005** |
 | :--- | :--- |
@@ -168,7 +168,7 @@
 | 알람 이름 | FdExhaustionClose |
 | 지속 시간 | 10분 |
 | 발생 조건 | 단순회귀분석\(simple linear regression\)을 이용하여 1시간 이내에 file descriptor 고갈이 예측될 경우 발생 |
-| 조치 사항 |  |
+| 조치 사항 | 해당 Pod의 로그 및 이벤트를 확인한다. 필요한면 노드의 Limit값을 변경한다.\(노드의 재시작 필요\) |
 
 * #### Kube-ApiServer
 
