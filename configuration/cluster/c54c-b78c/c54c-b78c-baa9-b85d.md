@@ -110,7 +110,7 @@
 | 알람 이름 | HighNumberOfFailedProposals |
 | 지속 시간 | 즉시 |
 | 발생 조건 | 최근 1시간 동안 5개 이상의 실패한 raft protocol 요청이 있을 경우. \(RAFT Protocol은 ETCD 동기화 Protocol\) |
-| 조치 사항 |  |
+| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 리더 선출의 일시적인 실패 또는 멤버 부족으로 인한 ETCD 클러스터 중단 시간이 길어질 경우 발생합니다. 리더가 있는지, 중단된 ETCD 멤버가 있는지 확인 |
 
 | 알람 ID | **ETC-012** |
 | :--- | :--- |
@@ -118,7 +118,7 @@
 | 알람 이름 | HighFsyncDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 wal fsync 지속 시간의 99번째 백분위가 500ms보다 클 경우 \(wal fsync: 로그 항목을 적용하기 전에 디스크에 저장시 호출.\) |
-| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크 문제시 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
 
 | 알람 ID | **ETC-013** |
 | :--- | :--- |
@@ -126,7 +126,7 @@
 | 알람 이름 | HighCommitDurations |
 | 지속 시간 | 10분 |
 | 발생 조건 | 최근 5분 동안의 커밋 지속 시간 중 99번째 백분위가 250ms보다 클 경우 \(backend commit: 디스크에 대한 최근 변경 사항의 증분 스냅 샷의 커밋.\) |
-| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크 문제시 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
+| 조치 사항 | ETCD 메트릭 문서\(https://github.com/coreos/etcd/blob/master/Documentation/metrics.md\)에 따르면 디스크에 문제가 있을 경우 발생한다고 함. Kubernetes 마스터 노드와 같이 실행중이라면 ETCD 클러스터의 분리도 고려. |
 
 * #### General
 
