@@ -8,7 +8,7 @@
 
 ##### b\) 등록할 계정 선택 및 이름, 유형, 설명을 작성한다.![](/assets/2.5.0 환경설정 계정 추가2.png)
 
-| 프로바이 | **설명** |
+| 프로바이더 | **설명** |
 | :--- | :--- |
 | Amazon Web Service | Amazon사의 Public 클라우드 서비스 |
 | Google Cloud Platform | Google사의 Public클라우스 서비스 |
