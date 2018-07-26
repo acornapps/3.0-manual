@@ -75,7 +75,7 @@
   * [볼륨](configuration/volume/volume.md)
     * [스토리지 추가](configuration/volume/add.md)
     * [스토리지 편집](configuration/volume/bcfc-b968-d3b8-c9d1.md)
-    * [스토리지 제거](configuration/volume/c2a4-d1a0-b9ac-c9c0-c81c-ac70.md)
+    * [스토리지 삭제](configuration/volume/c2a4-d1a0-b9ac-c9c0-c81c-ac70.md)
   * [알람](configuration/cluster/c54c-b78c.md)
     * [알람 목록](configuration/cluster/c54c-b78c/c54c-b78c-baa9-b85d.md)
   * [미터링](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/d074-b7ec-c2a4-d130-bbf8-d130-b9c1/bbf8-d130-b9c1.md)
