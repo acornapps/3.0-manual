@@ -14,8 +14,8 @@
 | :--- | :--- |
 | 이름 | PV 이름 |
 | 설명 | PV 사용자 설명 |
-| 정책 | PV 사용 정책\(RETAIN/DELETE\) |
 | 스토리지 플러그인 | 스토리지 종류\(NFS Dynamic/Static, EBS, Google Persistent Disk, Azure Disk\) |
+| 정책 | PV 사용 정책\(RETAIN/DELETE\) |
 | 스토리지 클래스 이름 | k8s에 등록된 ClassName |
 | 파라미터 | PV의 환경설정 값 |
 
