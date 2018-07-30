@@ -53,7 +53,7 @@
 | 중요도 | warning |
 | 알람 이름 | HighNumberOfFailedGRPCRequests |
 | 지속 시간 | 10분 |
-| 발생 조건 | 최근 5 분 이내에 gRPC 메소드 호출의 1% 이상 실패한 경우 |
+| 발생 조건 | 최근 5분 이내에 gRPC 메소드 호출의 1% 이상 실패한 경우 |
 | 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 대역폭을 늘리거나<br /> 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-005** |
@@ -61,7 +61,7 @@
 | 중요도 | **critical** |
 | 알람 이름 | HighNumberOfFailedGRPCRequests |
 | 지속 시간 | 5분 |
-| 발생 조건 | 최근 5 분 이내에 gRPC 메소드 호출의 5% 이상 실패한 경우 |
+| 발생 조건 | 최근 5분 이내에 gRPC 메소드 호출의 5% 이상 실패한 경우 |
 | 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 대역폭을 늘리거나<br /> 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-006** |
@@ -77,7 +77,7 @@
 | 중요도 | warning |
 | 알람 이름 | HighNumberOfFailedHTTPRequests |
 | 지속 시간 | 10분 |
-| 발생 조건 | 최근 5 분 이내에 HTTP 엔드 포인트에 대한 요청의 1% 이상이 실패한 경우 |
+| 발생 조건 | 최근 5분 이내에 HTTP 엔드 포인트에 대한 요청의 1% 이상이 실패한 경우 |
 | 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 대역폭을 늘리거나<br /> 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-008** |
@@ -85,7 +85,7 @@
 | 중요도 | **critical** |
 | 알람 이름 | HighNumberOfFailedHTTPRequests |
 | 지속 시간 | 5분 |
-| 발생 조건 | 최근 5 분 이내에 HTTP 엔드 포인트에 대한 요청의 5% 이상이 실패한 경우 |
+| 발생 조건 | 최근 5분 이내에 HTTP 엔드 포인트에 대한 요청의 5% 이상이 실패한 경우 |
 | 조치 사항 | ETCD 클러스터와 Kubernetes 클러스터의 대역폭을 늘리거나<br /> 클러스터의 Sacale-Up 필요. |
 
 | 알람 ID | **ETC-009** |
