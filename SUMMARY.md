@@ -58,6 +58,7 @@
     * [작업 설정 편집](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/c791-c5c5-c124-c815-d3b8-c9d1.md)
     * [히스토리](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/d788-c2a4-d1a0-b9ac.md)
     * [빌드 실행](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/be4c-b4dc-c2e4-d589.md)
+    * [빌드 취소](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/be4c-b4dc-cde8-c18c.md)
     * [로그 보기](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/b85c-adf8-bcf4-ae30.md)
     * [작업 삭제](c11c-be44-c2a4/c5b4-d50c-b9ac-cf00-c774-c158-b9f5/be4c-b4dc-ad00-b9ac/be4c-b4dc-c0ad-c81c.md)
 * [카탈로그](catalog/catalog.md)
@@ -84,5 +85,6 @@
 * [용어 설명](c6a9-c5b4-c815-b9ac.md)
   * [Kubernetes](c6a9-c5b4-c815-b9ac/kubernetes.md)
   * [Cocktail Cloud](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
+  * Cocktail System Error Code
 * [고객지원서비스](ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
