@@ -85,6 +85,6 @@
 * [용어 설명](c6a9-c5b4-c815-b9ac.md)
   * [Kubernetes](c6a9-c5b4-c815-b9ac/kubernetes.md)
   * [Cocktail Cloud](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
-  * Cocktail System Error Code
+  * [Cocktail System Error Code](c6a9-c5b4-c815-b9ac/cocktail-system-error-code.md)
 * [고객지원서비스](ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
