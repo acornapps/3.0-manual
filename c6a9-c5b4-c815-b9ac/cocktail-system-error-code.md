@@ -1,6 +1,6 @@
 ## 7.3 Cocktail System Error Code
 
-#### 1. Error Code
+#### 1. 에러 코드
 
 | **코드** | **메시지** |
 | :--- | :--- |
