@@ -2,7 +2,7 @@
 
 ---
 
-본 문서는 Cengjiyun Cloud\(층적 클라우드\) 사용자를 위한 문서이다. 아래 목차는 칵테일 클라우드의 메뉴를 기준으로 구성되며, 각 목차별로 주요 기능의 사용법을 설명하였다.
+본 문서는 Cengjiyun Cloud\(층적운 클라우드\) 사용자를 위한 문서이다. 아래 목차는 층적운 클라우드의 메뉴를 기준으로 구성되며, 각 목차별로 주요 기능의 사용법을 설명하였다.
 
 ### 목차
 
@@ -56,9 +56,9 @@
 
 ##### 7.1 Kubernetes
 
-##### 7.2 Cocktail Cloud
+##### 7.2 Cengjiyun Cloud
 
-##### 7.3 Cocktail System Error Code
+##### 7.3 Cengjiyun System Error Code
 
 ### [8. 고객지원 서비스](/ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
