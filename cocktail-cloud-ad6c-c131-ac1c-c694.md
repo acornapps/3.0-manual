@@ -1,8 +1,8 @@
-# Cocktail Cloud 구성 개요
+# Cengjiyun Cloud 구성 개요
 
 ---
 
-칵테일 클라우드는 그 역할에 따라 5개의 레이어로 구성된다.
+층적운 클라우드는 그 역할에 따라 5개의 레이어로 구성된다.
 
 ![](/assets/cocktailcloud-architecture.png)
 

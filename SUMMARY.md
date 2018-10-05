@@ -1,15 +1,15 @@
 # Summary
 
-## Cocktail Cloud 사용설명서 v2.5
+## Cengjiyun Cloud 사용설명서 v2.5
 
-* [Cocktail Cloud 이해](README.md)
-  * [Cocktail Cloud 구성 개요](cocktail-cloud-ad6c-c131-ac1c-c694.md)
+* [Cengjiyun Cloud 이해](README.md)
+  * [Cengjiyun Cloud 구성 개요](cocktail-cloud-ad6c-c131-ac1c-c694.md)
   * [클러스터 관리 레이어](cluster-management-layerd074-b7ec-c2a4-d130-ad00-b9ac-b808-c774-c5b429.md)
   * [서비스 관리 레이어](c11c-be44-c2a4-ad00-b9ac-b808-c774-c5b4.md)
   * [파이프라인 레이어](d30c-c774-d504-b77c-c778-b808-c774-c5b4.md)
   * [카탈로그 레이어](catalog-layer-ce74-d0c8-b85c-adf8-b808-c774-c5b429.md)
   * [대시보드 레이어](b300-c2dc-bcf4-b4dc-b808-c774-c5b4.md)
-* [Cocktail Cloud 사용설명서](baa9-cc28.md)
+* [Cengjiyun Cloud 사용설명서](baa9-cc28.md)
 * [로그인](b85c-adf8-c778.md)
 * [환경설정](d658-acbd-c124-c815.md)
   * [사용자](configuration/user/user.md)
@@ -84,7 +84,7 @@
   * [사용자 관리](dashboard/b300-c2dc-bcf4-b4dc/c0ac-c6a9-c790-ad00-b9ac.md)
 * [용어 설명](c6a9-c5b4-c815-b9ac.md)
   * [Kubernetes](c6a9-c5b4-c815-b9ac/kubernetes.md)
-  * [Cocktail Cloud](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
-  * [Cocktail System Error Code](c6a9-c5b4-c815-b9ac/cocktail-system-error-code.md)
+  * [Cengjiyun Cloud](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
+  * [Cengjiyun System Error Code](c6a9-c5b4-c815-b9ac/cocktail-system-error-code.md)
 * [고객지원서비스](ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
