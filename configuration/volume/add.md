@@ -43,9 +43,9 @@
 
 * **NFS Named 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_5.png)
 
-| 스토리지 플러그인 | **NFS** Static |
+| 스토리지 플러그인 | **NFS** Named |
 | :--- | :--- |
-| 정책 | Static 플러그인은 Retain 단일 정책을 지원 |
+| 정책 | NFS Named 플러그인은 Retain 단일 정책을 지원 |
 | 총용량 | 스토리지 총용량(Gb) |
 | server | 스토리지의 IP Address |
 | path | mount 경로 |
@@ -62,6 +62,7 @@
 
 | 스토리지 플러그인 | Google Persistent Disk \(GCP의 스토리지 서비스\) |
 | :--- | :--- |
+| 정책 | Retain과 Delete 정책을 지원 |
 | 스토리지 클래스 이름 | standard\(기본값\) |
 | type | pd-standard, pd-ssd 선택 |
 
@@ -69,8 +70,9 @@
 
 | 스토리지 플러그인 | Azure Disk \(Azure의 스토리지 서비스\) |
 | :--- | :--- |
+| 정책 | Retain과 Delete 정책을 지원 |
 | 스토리지 클래스 이름 | default\(기본값\) |
-| storageAccount | storageAccount 값 입력
+| storageAccount | storageAccount 값 입력 |
 
 
 
