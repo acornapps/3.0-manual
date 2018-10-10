@@ -4,7 +4,7 @@
 
 계정을 추가하여 사용할 수 있다. \([AWS 계정](/configuration/provider/add/aws-d504-b85c-bc14-c774-b354-cd94-ac00.md), [GCP 계정](/configuration/provider/add/gcp-d504-b85c-bc14-c774-b354-cd94-ac00.md)의 경우 추가정보 입력이 필요하다.\)
 
-##### a\) 환경설정 → 계정 → 우측 상단 + 모양의 버튼을 클릭한다.![](/assets/KR/3.0.0/2.2.1_1.png)
+##### a\) 환경설정 → 계정 → 우측 상단 계정 추가 버튼을 클릭한다.![](/assets/KR/3.0.0/2.2.1_1.png)
 
 ##### b\) 등록할 계정 선택 및 이름, 유형, 설명을 작성한다.![](/assets/KR/3.0.0/2.2.1_2.png)
 
