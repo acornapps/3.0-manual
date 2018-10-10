@@ -15,13 +15,13 @@
 | 이름 | PV 이름 |
 | 설명 | PV 사용자 설명 |
 | 유형 | 스리지 유형 (Single, Shared)
-| 스토리지 플러그인 | 스토리지 종류\(NFS Dynamic/Static, EBS, Google Persistent Disk, Azure Disk\) |
+| 스토리지 플러그인 | 스토리지 종류\(NFS/NFS Named, EBS, Google Persistent Disk, Azure Disk\) |
 | 정책 | PV 사용 정책\(RETAIN/DELETE\) |
 
 | **유형** | **설명** |
 | :--- | :--- |
-| Single | 워커로드 하나에서만 사용 가능한 스토리 |
-| Shared | 워커로드 간에 공유하여 사용 가능한 스토리지 |
+| Single | 워크로드 하나에서만 사용 가능한 스토리 |
+| Shared | 워크로드 간에 공유하여 사용 가능한 스토리지 |
 
 | **정책** | **설명** |
 | :--- | :--- |
@@ -32,37 +32,45 @@
 
 ##### d\) 사용하는 스토리지 플러그인에 따라 스토리지 클래스와 파라미터 설정.
 
-* ##### NFS Dynamic 스토리지 플러그인 사용 시![](/assets/2.3.0 볼륨 추가2-1.png)
+* ##### NFS 스토리지 플러그인 사용 시![](/assets/KR/3.0.0/5.4.1_4.png)
 
-| 스토리지 플러그인 | **NFS** Dynamic |
+| 스토리지 플러그인 | **NFS** |
 | :--- | :--- |
+| 총용량 | 스토리지 총용량(Gb) |
 | 정책 | Dynamic 플러그인은 Retain과 Delete 정책을 지원 |
 | 스토리지 클래스 이름 | cocktail-nfs\(기본값\) |
+| 스토리지 프로비저닝 | 스토리지 프로비저닝 값 입력 |
 
-* **NFS Static 스토리지 플러그인 사용 시**![](/assets/2.3.0 볼륨 추가2-2.png)
+* **NFS Named 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_5.png)
 
 | 스토리지 플러그인 | **NFS** Static |
 | :--- | :--- |
 | 정책 | Static 플러그인은 Retain 단일 정책을 지원 |
-| 파라미터 | Server : 스토리지의 IP Address                                                   PPath :  mount 경로 |
+| 총용량 | 스토리지 총용량(Gb) |
+| server | 스토리지의 IP Address |
+| path | mount 경로 |
 
-* **아마존 스토리지 플러그인 사용 시**![](/assets/2.3.0 볼륨 추가2-3.png)
+* **아마존 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_6.png)
 
 | 스토리지 플러그인 | AWS EBS \(AWS의 스토리지 서비스\) |
 | :--- | :--- |
+| 정책 | Retain과 Delete 정책을 지원 |
 | 스토리지 클래스 이름 | default\(고정값\) |
+| type | io1, gp2, sc1, st1을 선택 |
 
-* **구글 스토리지 플러그인 사용 시**![](/assets/2.3.0 볼륨 추가2-4.png)
+* **구글 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_7.png)
 
 | 스토리지 플러그인 | Google Persistent Disk \(GCP의 스토리지 서비스\) |
 | :--- | :--- |
 | 스토리지 클래스 이름 | standard\(기본값\) |
+| type | pd-standard, pd-ssd 선택 |
 
-* **Azure 스토리지 플러그인 사용 시**![](/assets/2.3.0 볼륨 추가2-5.png)
+* **Azure 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_8.png)
 
 | 스토리지 플러그인 | Azure Disk \(Azure의 스토리지 서비스\) |
 | :--- | :--- |
 | 스토리지 클래스 이름 | default\(기본값\) |
+| storageAccount | storageAccount 값 입력
 
 
 
