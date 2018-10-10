@@ -1,6 +1,6 @@
 # Summary
 
-## Cengjiyun Cloud 사용설명서 v2.5
+## Cengjiyun Cloud 사용설명서 v3.0
 
 * [Cengjiyun Cloud 이해](README.md)
   * [Cengjiyun Cloud 구성 개요](cocktail-cloud-ad6c-c131-ac1c-c694.md)
