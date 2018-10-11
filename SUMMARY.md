@@ -1,6 +1,6 @@
 # Summary
 
-## 청지원 사용설명서 v3.0
+## 청지윈 사용설명서 v3.0
 
 * [청지원 이해](README.md)
   * [청지원 구성 개요](cocktail-cloud-ad6c-c131-ac1c-c694.md)
