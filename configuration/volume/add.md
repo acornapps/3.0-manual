@@ -15,7 +15,7 @@
 | 이름 | PV 이름 |
 | 설명 | PV 사용자 설명 |
 | 유형 | 스리지 유형 (Single, Shared)
-| 스토리지 플러그인 | 스토리지 종류\(NFS/NFS Named, EBS, Google Persistent Disk, Azure Disk\) |
+| 스토리지 플러그인 | 스토리지 종류\(NFS, NFS Named, EBS, Google Persistent Disk, Azure Disk\) |
 | 정책 | PV 사용 정책\(RETAIN/DELETE\) |
 
 | **유형** | **설명** |
@@ -38,7 +38,7 @@
 | :--- | :--- |
 | 총용량 | 스토리지 총용량(Gb) |
 | 정책 | Dynamic 플러그인은 Retain과 Delete 정책을 지원 |
-| 스토리지 클래스 이름 | cocktail-nfs\(기본값\) |
+| 스토리지 클래스 이름 | default-storage\(기본값\) |
 | 스토리지 프로비저닝 | 스토리지 프로비저닝 값 입력 |
 
 * **NFS Named 스토리지 플러그인 사용 시**![](/assets/KR/3.0.0/5.4.1_5.png)

@@ -1,8 +1,8 @@
-# 청지 구성 개요
+# 청지윈 구성 개요
 
 ---
 
-층적운 클라우드는 그 역할에 따라 5개의 레이어로 구성된다.
+청지윈은 그 역할에 따라 5개의 레이어로 구성된다.
 
 ![](/assets/cocktailcloud-architecture.png)
 
@@ -20,7 +20,7 @@
 
 ---
 
-이전글 : [Cocktail Cloud 이해](/README.md)
+이전글 : [청지윈 이해](/README.md)
 
 다음글 : [Cluster Management Layer\(클러스터 관리 레이어\)](/cluster-management-layerd074-b7ec-c2a4-d130-ad00-b9ac-b808-c774-c5b429.md)
 

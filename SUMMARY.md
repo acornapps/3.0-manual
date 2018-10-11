@@ -87,7 +87,7 @@
   * [사용자 관리](dashboard/b300-c2dc-bcf4-b4dc/c0ac-c6a9-c790-ad00-b9ac.md)
 * [용어 설명](c6a9-c5b4-c815-b9ac.md)
   * [Kubernetes](c6a9-c5b4-c815-b9ac/kubernetes.md)
-  * [청지원](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
-  * [청지원 System Error Code](c6a9-c5b4-c815-b9ac/cocktail-system-error-code.md)
+  * [청지윈](c6a9-c5b4-c815-b9ac/cocktail-cloud.md)
+  * [청지윈 System Error Code](c6a9-c5b4-c815-b9ac/cocktail-system-error-code.md)
 * [고객지원서비스](ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
