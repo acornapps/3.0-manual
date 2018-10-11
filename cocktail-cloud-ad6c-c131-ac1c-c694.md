@@ -1,4 +1,4 @@
-# Cengjiyun Cloud 구성 개요
+# 청지 구성 개요
 
 ---
 
