@@ -56,9 +56,9 @@
 
 ##### 7.1 Kubernetes
 
-##### 7.2 청지원
+##### 7.2 청지윈
 
-##### 7.3 청지원 System Error Code
+##### 7.3 청지윈 System Error Code
 
 ### [8. 고객지원 서비스](/ace0-ac1d-c9c0-c6d0-c11c-be44-c2a4.md)
 
